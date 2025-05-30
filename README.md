@@ -29,11 +29,13 @@ http://localhost:5000
 
 ## File Structure 📂
 survey_app/
+
 ├── app.py             # Main application logic
 
 ├── survey.db          # Database (auto-created)
 
 ├── static/
+
 │   └── style.css      # Stylesheet
 
 ├── templates/
@@ -41,6 +43,7 @@ survey_app/
 │   ├── home.html      # Survey form
 
 │   └── results.html   # Statistics view
+
 └── README.md          # This file
 
 ## Calculations Performed 🧮
