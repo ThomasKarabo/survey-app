@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <table style="border: none;">
+        <tr>
+            <td style="border: none;"><h2>_Surveys</h2></td>
+            <td style="border: none;">
+                <a href="{{ url_for('home') }}">FILL OUT SURVEY</a>
+            </td>
+            <td style="border: none;">
+                <a href="{{ url_for('results') }}">VIEW SURVEY RESULTS</a>
+            </td>
+        </tr>
+    </table>
+    <h1>Survey Results</h1>
+    {% if no_data %}
+        <p>No Surveys Available</p>
+    {% else %}
+        <table>
+            <tr><td>Total surveys:</td><td>{{ stats.total }}</td></tr>
+            <tr><td>Average age:</td><td>{{ stats.avg_age }}</td></tr>
+            <tr><td>Oldest participant:</td><td>{{ stats.max_age }}</td></tr>
+            <tr><td>Youngest participant:</td><td>{{ stats.min_age }}</td></tr>
+            <br>
+            <tr><td>Percentage who like Pizza:</td><td>{{ stats.pizza_percent }}%</td></tr>
+            <tr><td>Percentage who like Pasta:</td><td>{{ stats.pasta_percent }}%</td></tr>
+            <tr><td>Percentage who like Pap and Wors:</td><td>{{ stats.pap_wors_percent }}%</td></tr>
+            <br>
+            <tr><td>Average rating - I like to watch movies:</td><td>{{ stats.movies_avg }}</td></tr>
+            <tr><td>Average rating - I like to listen to radio:</td><td>{{ stats.radio_avg }}</td></tr>
+            <tr><td>Average rating - I like to eat out:</td><td>{{ stats.eat_out_avg }}</td></tr>
+            <tr><td>Average rating - I like to watch TV:</td><td>{{ stats.tv_avg }}</td></tr>
+        </table>
+    {% endif %}
+    
+    <a href="/">Back to Survey</a>
+</body>
+</html>

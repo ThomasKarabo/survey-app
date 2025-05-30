@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lifestyle Survey</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <table style="border: none;">
+        <tr>
+            <td style="border: none;"><h2>_Surveys</h2></td>
+            <td style="border: none;">
+                <a href="{{ url_for('home') }}">FILL OUT SURVEY</a>
+            </td>
+            <td style="border: none;">
+                <a href="{{ url_for('results') }}">VIEW SURVEY RESULTS</a>
+            </td>
+        </tr>
+    </table>
+    <form action="/submit" method="post">
+        <h2>Personal Details</h2>
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="date" name="birth_date" required>
+        <input type="tel" name="contact_number" placeholder="Contact Number" required>
+
+        <table style="border: none;">
+            <tr>
+                <td style="border: none;"><label>What is your favorite food?</label></td>
+                <td style="border: none;">Pizza<input type="checkbox" name="pizza" value="1"></td>
+                <td style="border: none;">Pasta<input type="checkbox" name="pasta" value="2"></td>
+                <td style="border: none;">Pap and Wors<input type="checkbox" name="pap_wors" value="3"></td>
+                <td style="border: none;">Other<input type="checkbox" name="other_food" value="4"></td>
+            </tr>
+        </table>
+
+        <!-- Repeat for other rating questions -->
+        <div class="form-group">
+        <p>Please rate your level of agreement on a scale from 1 to 5, with 1 being "strongly agree" and 5 being "strongly disagree."</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Strongly Agree</th>
+                    <th>Agree</th>
+                    <th>Neutral</th>
+                    <th>Disagree</th>
+                    <th>Strongly Disagree</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>I like to watch movies</td>
+                    <td><input type="radio" name="movies_rating" value="1"></td>
+                    <td><input type="radio" name="movies_rating" value="2"></td>
+                    <td><input type="radio" name="movies_rating" value="3"></td>
+                    <td><input type="radio" name="movies_rating" value="4"></td>
+                    <td><input type="radio" name="movies_rating" value="5"></td>
+                </tr>
+                <tr>
+                    <td>I like to listen to radio</td>
+                    <td><input type="radio" name="radio_rating" value="1"></td>
+                    <td><input type="radio" name="radio_rating" value="2"></td>
+                    <td><input type="radio" name="radio_rating" value="3"></td>
+                    <td><input type="radio" name="radio_rating" value="4"></td>
+                    <td><input type="radio" name="radio_rating" value="5"></td>
+                </tr>
+                <tr>
+                    <td>I like to eat out</td>
+                    <td><input type="radio" name="eat_out_rating" value="1"></td>
+                    <td><input type="radio" name="eat_out_rating" value="2"></td>
+                    <td><input type="radio" name="eat_out_rating" value="3"></td>
+                    <td><input type="radio" name="eat_out_rating" value="4"></td>
+                    <td><input type="radio" name="eat_out_rating" value="5"></td>
+                </tr>
+                <tr>
+                    <td>I like to watch TV</td>
+                    <td><input type="radio" name="tv_rating" value="1"></td>
+                    <td><input type="radio" name="tv_rating" value="2"></td>
+                    <td><input type="radio" name="tv_rating" value="3"></td>
+                    <td><input type="radio" name="tv_rating" value="4"></td>
+                    <td><input type="radio" name="tv_rating" value="5"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+        <button type="submit" class="submit-btn">SUBMIT</button>
+    </form>
+</body>
+</html>

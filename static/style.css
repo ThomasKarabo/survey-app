@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+        
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+        
+h2 {
+    color: #2980b9;
+    margin-top: 25px;
+}
+        
+.form-group {
+    margin-bottom: 15px;
+}
+        
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+        
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+}
+        
+.radio-group {
+    margin: 10px 0;
+}
+        
+        .radio-option {
+    margin-bottom: 5px;
+}
+        
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+        
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+        
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+        
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+        
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+        
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 30px 0;
+}
