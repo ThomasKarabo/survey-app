@@ -36,13 +36,13 @@ survey_app/
 
 ├── static/
 
-│   └── style.css      # Stylesheet
+   └── style.css      # Stylesheet
 
 ├── templates/
 
-│   ├── home.html      # Survey form
+   ├── home.html      # Survey form
 
-│   └── results.html   # Statistics view
+   └── results.html   # Statistics view
 
 └── README.md          # This file
 
