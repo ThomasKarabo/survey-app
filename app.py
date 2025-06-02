@@ -8,7 +8,7 @@ app = Flask(__name__)
 # Database setup
 def get_db():
     DB_PATH = os.path.join('/tmp', 'survey.db')
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect('survey.db')
     conn.row_factory = sqlite3.Row
     return conn
 

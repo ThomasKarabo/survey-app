@@ -12,7 +12,7 @@ A simple Flask application for collecting and analyzing lifestyle preferences.
 ## Installation 🛠️
 1. Clone the repository:
    ```
-   git clone https://github.com/ThomasKarabo/survey-app.git
+   git clone https://github.com/yourusername/survey-app.git
    cd survey-app```
 
 2. Install requirements
@@ -29,21 +29,13 @@ http://localhost:5000
 
 ## File Structure 📂
 survey_app/
-
 ├── app.py             # Main application logic
-
 ├── survey.db          # Database (auto-created)
-
 ├── static/
-
-   └── style.css      # Stylesheet
-
+│   └── style.css      # Stylesheet
 ├── templates/
-
-   ├── home.html      # Survey form
-
-   └── results.html   # Statistics view
-
+│   ├── home.html      # Survey form
+│   └── results.html   # Statistics view
 └── README.md          # This file
 
 ## Calculations Performed 🧮
