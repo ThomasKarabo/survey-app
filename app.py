@@ -1,12 +1,14 @@
 from flask import Flask, render_template, request, redirect, url_for
 import sqlite3
 from datetime import datetime
+import os
 
 app = Flask(__name__)
 
 # Database setup
 def get_db():
-    conn = sqlite3.connect('survey.db')
+    DB_PATH = os.path.join('/tmp', 'survey.db')
+    conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
 
